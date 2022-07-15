@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  worker:
+    build: .
+    environment:
+      - API_HASH=${API_HASH}
+      - API_ID=${API_ID}
+      - BOT_TOKEN=${BOT_TOKEN}
+      - MONGO_URL=${MONGO_URL}
+      - API_HASH1=${API_HASH1}
+      - API_ID1=${API_ID1}
+      - LOG_GROUP_ID=${LOG_GROUP_ID}
+      - BASE_DB=${BASE_DB}
+      - ARQ_API_URL=${ARQ_API_URL}
+      - ARQ_API_KEY=${ARQ_API_KEY}
+      - COMMAND_PREFIXES=${COMMAND_PREFIXES}     
